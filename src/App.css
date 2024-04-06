@@ -1,0 +1,1999 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* //////////////////////////////////Home.js */
+.HomeBody{
+
+   /* background-image: url(https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size:cover;
+   /* Center the background image */
+   background-position: center;
+  
+   
+}
+
+
+.card{
+
+    width: 300px;
+    height: 570px;
+    /* margin-left: 20px;
+margin-top: 50px; */
+
+margin: 50px 20px;
+    
+   
+}
+
+
+.movies{
+
+  display: flex;
+  overflow-x: auto;
+  
+  justify-content: space-evenly;
+
+  
+}
+
+
+
+.card-text{
+
+font-size: 15px;
+}
+
+#location{
+
+  margin-left: 1300px;
+margin-top: -700px;
+position: absolute;
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  /* .HomeBody {
+    background-image: url(https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+  } */
+
+  .card {
+    width: 200px; /* Adjust according to your design */
+    height: auto; /* Adjust according to your design */
+    margin: 10px; /* Adjust according to your design */
+  }
+
+  .movies {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-evenly;
+  }
+
+  .card-text {
+    font-size: 12px; /* Adjust according to your design */
+  }
+
+  #location {
+    margin: 0; /* Adjust according to your design */
+    position: static; /* Adjust according to your design */
+    
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* .HomeBody {
+    background-image: url(https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+  } */
+
+  .card {
+    width: 250px; /* Adjust according to your design */
+    /* Adjust according to your design */
+    margin: 20px; /* Adjust according to your design */
+  }
+
+  .movies {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-evenly;
+  }
+
+  .card-text {
+    font-size: 14px; /* Adjust according to your design */
+  }
+
+  #location {
+    margin: 0; /* Adjust according to your design */
+    position: static; /* Adjust according to your design */
+  }
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////// */
+
+#Introheader{
+
+   border: 1px solid gold;
+
+   
+
+   background-color: gold;
+
+   height: 70px;
+
+   display: flex;
+
+
+   justify-content: space-around;
+}
+
+#Introh1{
+
+    font-size: 20px;
+
+    padding-top: 15px;
+
+    padding-left: 520px;
+}
+
+@media only screen and (max-width: 768px) {
+  #Introh1 {
+      padding-left: 20px; /* Adjust padding for tablet screens */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+  #Introh1 {
+      padding-left: 10px; /* Adjust padding for mobile screens */
+      font-size: 16px; /* Adjust font size for mobile screens */
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+
+
+
+
+
+/* External CSS  Login.js   */
+
+.custom-container {
+  width: 500px;
+ margin: 150px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+
+
+  background-color: whitesmoke;
+
+}
+
+.custom-heading {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.custom-form {
+  margin-top: 20px;
+}
+
+.custom-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.custom-input {
+  width: 100%;
+  
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-button {
+  width: 100%;
+ 
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+
+#signup{
+
+    padding-left: 50px;
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+ 
+  .custom-container{
+
+    margin-top: 220px;
+
+    width: 300px;
+}
+  
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  
+  .custom-container{
+
+    margin-top: 200px;
+
+    width: 400px;
+}
+}
+
+
+
+
+/* //////////////////////////////// */
+
+
+
+
+
+
+/* External CSS for register.js */
+
+.registration-container {
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #4CAF50;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+ 
+  
+}
+
+.registration-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #4CAF50;
+}
+
+.registration-form {
+  margin-top: 20px;
+}
+
+.registration-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4CAF50;
+}
+
+.registration-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #4CAF50;
+  border-radius: 4px;
+}
+
+.registration-button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration-button:hover {
+  background-color: #45a049;
+}
+
+/* For Mobile Devices */
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .registration-container {
+     /* Adjust width according to your design */
+    margin: 130px auto;
+    padding: 15px; /* Adjust padding according to your design */
+    
+
+
+    width: 300px;
+  }
+
+  .registration-heading {
+    font-size: 20px; /* Adjust font size according to your design */
+  }
+
+  .registration-label {
+    color: #4CAF50;
+  }
+
+  .registration-input {
+    width: 100%;
+  }
+
+  .registration-button {
+    width: 100%;
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .registration-container {
+    /* Adjust width according to your design */
+    margin: 140px auto;
+    padding: 20px; /* Adjust padding according to your design */
+
+    width: 400px;
+
+    
+    
+  }
+
+  .registration-heading {
+    font-size: 24px; /* Adjust font size according to your design */
+  }
+
+  .registration-label {
+    color: #4CAF50;
+  }
+
+  .registration-input {
+    width: 100%;
+  }
+
+  .registration-button {
+    width: 100%;
+  }
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////  Theater.js   */ 
+
+
+
+.Dates{
+   
+  border: 1px solid gold;
+
+  height: 70px;
+  font-size: 30px;
+  padding-top: 10px;
+  background-color: gold;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+  
+  
+  }
+  
+  #date1 , #date2 , #date3{
+  
+    
+      text-decoration: none;
+      color: white;
+  }
+  
+  .Showselection{
+  
+      text-align: center;
+      border: 1px solid black;
+  
+      width: 1000px;
+      height: 500px;
+  
+      margin-top: 100px;
+  
+      margin-left: 150px;
+  
+      padding-top: 50px;
+  
+      background-color: whitesmoke;
+  
+      border-radius: 5%;
+  
+      position: absolute;
+  }
+  
+  
+
+
+
+
+.Theaterbox{
+
+   display: flex;
+   margin-left: 300px;
+   margin-top: 50px;
+  
+
+}
+
+
+#showdetails{
+
+  padding-right: 20px;
+}
+
+
+.Allcombine{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -150px;
+}
+
+
+.theaterscreen{
+
+  border: 1px solid black;
+  width: 1200px;
+  height: 550px;
+  margin-top: 50px;
+  margin-left: 150px;
+  position: relative;
+  background-color: #2c3954;
+}
+
+#shownames{
+
+    text-decoration: none;
+    font-size: 18px;
+
+    color: green;
+
+    border: 1px solid black;
+
+    padding: 10px;
+  
+    
+    
+
+}
+
+#shownames:hover{
+
+    color: gold;
+}
+
+#logout{
+
+    padding-left: 50px;
+
+    color: white;
+
+    display: inline;
+}
+
+
+#hometheater{
+
+    padding-left: 200px;
+}
+
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .Dates {
+   
+
+    font-size: 20px; /* Adjust font size according to your design */
+    padding: 5px; /* Adjust padding according to your design */
+    text-align: center;
+    margin: 0;
+
+ 
+    
+  }
+
+  #date1, #date2, #date3 {
+   
+
+    font-size: 14px;
+
+    padding-top: 13px;
+  }
+
+  .Showselection {
+    width: 500px; /* Adjust width according to your design */
+    height: 500px; /* Adjust height according to your design */
+    margin-top: 50px; /* Adjust margin-top according to your design */
+    margin-left: 10px; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+    padding: 20px; /* Adjust padding according to your design */
+  }
+
+  .Theaterbox {
+    display: flex;
+    
+    margin-left: 50px;
+  }
+
+  #showdetails {
+    padding-right: 10px; /* Adjust padding-right according to your design */
+  }
+
+  .theaterscreen {
+    width: 650px; /* Adjust width according to your design */
+    height: 550px; /* Adjust height according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+    margin-left: 0; /* Adjust margin-left according to your design */
+  }
+
+  #shownames {
+    font-size: 16px; /* Adjust font size according to your design */
+    padding: 5px; /* Adjust padding according to your design */
+  }
+
+  #logout, #hometheater {
+    padding-left: 20px; /* Adjust padding-left according to your design */
+
+    font-size: 20px;
+  }
+
+#logout{
+    margin-top: 12px;
+}
+
+#outicon{
+
+   margin-top: 10px;
+}
+
+  .Allcombine{
+
+
+    margin-left: 5px;
+   
+    
+}
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Dates {
+     /* Adjust width according to your design */
+    font-size: 24px; /* Adjust font size according to your design */
+  }
+
+  #date1, #date2, #date3 {
+    
+    padding-top: 15px;
+     
+    font-size: 18px;
+    
+  }
+
+  .Showselection {
+    width: 600px; /* Adjust width according to your design */
+    height: 500px; /* Adjust height according to your design */
+    margin-top: 30px; /* Adjust margin-top according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+    padding: 30px; /* Adjust padding according to your design */
+  }
+
+  .Theaterbox {
+    margin-top: 30px; /* Adjust margin-top according to your design */
+    margin-left: 30px
+  }
+
+  #showdetails {
+    padding-right: 30px; /* Adjust padding-right according to your design */
+  }
+
+  .theaterscreen {
+    width: 800px; /* Adjust width according to your design */
+    height: 500px; /* Adjust height according to your design */
+    margin-top: 30px; /* Adjust margin-top according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+  #logout, #hometheater {
+    padding-left: 30px; /* Adjust padding-left according to your design */
+  }
+
+  .Allcombine{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px
+}
+
+
+
+
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+
+
+
+/* ///////////////////////////Show.js */
+
+.Hall{
+
+  border: 1px solid black;
+  height: 200px;
+  width: 670px;
+  margin-left: 200px;
+  margin-top: 50px;
+  display: flex;
+}
+
+
+.paymentbox{
+
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .Hall {
+    width: 100%; /* Adjust width according to your design */
+    margin-left: 0; /* Adjust margin-left according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+    display: flex;
+  }
+
+  .paymentbox {
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+    margin-top: 10px; /* Adjust margin-top according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Hall {
+    width: 500px; /* Adjust width according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+    margin-top: 30px; /* Adjust margin-top according to your design */
+    display: flex;
+    
+    
+    
+  }
+
+  .paymentbox {
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+  }
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+/* //////////////////////Payment.js */
+
+.payment{
+
+  background-image: url(https://media.istockphoto.com/id/1488300960/photo/happy-family-buying-movie-tickets-in-cinema.jpg?s=2048x2048&w=is&k=20&c=wh_aoLiuwjsAok3O4RlEoe5jYpNh8Qf149_IcM3D0p0=);
+
+  background-size:cover;
+  /* Center the background image */
+  background-position: center;
+
+  height: 1000px;
+
+}
+
+
+
+.Header{
+
+    
+  border: 1px solid gold;
+  height: 90px;
+ 
+  display: flex;
+  background-color: gold;
+
+  padding-top: 20px;
+
+  
+  
+
+ 
+  justify-content: space-evenly;
+
+  
+      
+}
+
+
+
+h3{
+
+    padding-right: 10px;
+}
+
+.Confirmpay{
+
+
+  border: 1px solid gold;
+
+  width: 400px;
+
+  height: 300px;
+
+margin: 150px auto;
+
+  border-radius: 5%;
+
+  color: white;
+
+  
+  font-size: 20px;
+
+  display: flex;
+
+
+
+  align-items: center;
+
+}
+
+
+.Final{
+
+  display: flex;
+
+  justify-content: space-around;
+
+  padding-left: 70px;
+}
+
+#PayNow{
+
+padding-left: 100px;
+padding-top: 100px;
+
+}
+
+.SeatDetails{
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-left: 70px;
+  
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .payment {
+    height: 1000px; /* Adjust height according to your design */
+  }
+
+  .Header {
+  
+    width: auto;
+    height: auto;
+    padding: 10px; /* Adjust padding according to your design */
+    padding-top: 10px; /* Adjust padding-top according to your design */
+    padding-left: 20px; /* Adjust padding-left according to your design */
+
+    
+  }
+
+  h3 {
+    padding-right: 5px; /* Adjust padding-right according to your design */
+
+    font-size: 11px;
+
+    padding-top: 20px;
+  }
+
+  .Confirmpay {
+    width: 300px; /* Adjust width according to your design */
+    margin: 50px auto; /* Adjust margin according to your design */
+    padding: 10px; /* Adjust padding according to your design */
+    margin-top: 250px; /* Adjust margin-top according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+ 
+  #PayNow {
+    padding-left: 50px; /* Adjust padding-left according to your design */
+    padding-top: 20px; /* Adjust padding-top according to your design */
+  }
+
+  .SeatDetails {
+   
+    padding-top: 10px; /* Adjust padding-top according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .payment {
+    height: 1000px; /* Adjust height according to your design */
+  }
+
+  .Header {
+  
+    
+    padding: 20px; /* Adjust padding according to your design */
+    padding-top: 30px; /* Adjust padding-top according to your design */
+    padding-left: 30px; /* Adjust padding-left according to your design */
+  }
+
+  h3 {
+    padding-right: 10px; /* Adjust padding-right according to your design */
+
+    font-size: 18px;
+    
+  }
+
+  .Confirmpay {
+    width: 350px; /* Adjust width according to your design */
+    margin: 50px auto; /* Adjust margin according to your design */
+    padding: 20px; /* Adjust padding according to your design */
+    margin-top: 200px; /* Adjust margin-top according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+ 
+
+  #PayNow {
+    padding-left: 50px; /* Adjust padding-left according to your design */
+    padding-top: 50px; /* Adjust padding-top according to your design */
+  }
+
+  
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////NAVBAR.JS */
+
+
+
+.navbar {
+  background-color: gold;
+  padding: 10px 20px;
+  height: 50px;
+  box-sizing: border-box;
+ 
+ 
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 80px;
+  box-sizing: border-box;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 150px;
+}
+
+
+
+.navbar ul li :hover {
+   
+
+ border: 1px solid black;
+ 
+ background-color: black;
+
+ border-radius: 60px;
+
+ padding: 10px;
+
+ transform: skewx(45deg);
+
+
+
+
+}
+
+
+
+
+
+ul{
+
+   display: flex;
+}
+
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 5px 10px; /* Adjust padding according to your design */
+    height: auto; /* Adjust height according to your design */
+  }
+
+  .navbar ul li {
+    display: block; /* Adjust display according to your design */
+    margin-right: 0; /* Adjust margin-right according to your design */
+    margin-bottom: 10px; /* Adjust margin-bottom according to your design */
+  }
+
+  .navbar ul li a {
+    font-size: 16px; /* Adjust font size according to your design */
+  }
+
+  .navbar ul li:hover {
+    border: none; /* Adjust border according to your design */
+    background-color: transparent; /* Adjust background color according to your design */
+    border-radius: 0; /* Adjust border-radius according to your design */
+    padding: 0; /* Adjust padding according to your design */
+    transform: none; /* Adjust transform according to your design */
+  }
+
+  ul {
+    display: block; /* Adjust display according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px; /* Adjust padding according to your design */
+  }
+
+  .navbar ul li {
+    margin-right: 40px; /* Adjust margin-right according to your design */
+  }
+
+  .navbar ul li a {
+    font-size: 18px; /* Adjust font size according to your design */
+  }
+
+  .navbar ul li:hover {
+    border: none; /* Adjust border according to your design */
+    background-color: transparent; /* Adjust background color according to your design */
+    border-radius: 0; /* Adjust border-radius according to your design */
+    padding: 0; /* Adjust padding according to your design */
+    transform: none; /* Adjust transform according to your design */
+  }
+
+  ul {
+    display: flex; /* Adjust display according to your design */
+  }
+}
+
+
+
+
+
+/* ////////////////////////////////// */
+
+
+
+
+
+
+/* /////////////////////////////////// Order.js and also for Confirm.js */
+
+
+
+#Ordercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: goldenrod;
+  height: 1000px;
+}
+
+#yourbook {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 1000px;
+}
+
+#Main {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+.ticket-container {
+  margin: 10px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+.ticket-content {
+  padding: 20px;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-info {
+  margin-bottom: 20px;
+}
+
+.movie-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.movie-item h3 {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.movie-item img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.theater-info,
+.show-info {
+  flex: 1;
+}
+
+.theater-item,
+.show-item {
+  margin-bottom: 10px;
+}
+
+.theater-item h4,
+.show-item h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.seat-count {
+  text-align: center;
+  font-size: 16px;
+}
+
+#OrderHome {
+  margin-top: 250px;
+  width: 1000px;
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  #Ordercontainer {
+    padding: 10px; /* Adjust padding according to your design */
+    height: 1000px; /* Adjust height according to your design */
+  }
+
+  #yourbook {
+    width: 400px; /* Adjust width according to your design */
+  }
+
+  #Main {
+    justify-content: flex-start; /* Adjust justify-content according to your design */
+  }
+
+  .ticket-container {
+    width: 100%; /* Adjust width according to your design */
+    margin: 5px; /* Adjust margin according to your design */
+  }
+
+  .ticket-content {
+    padding: 10px; /* Adjust padding according to your design */
+
+   
+  }
+
+  .ticket-header {
+    margin-bottom: 10px; /* Adjust margin-bottom according to your design */
+  }
+
+  .movie-item h3 {
+    font-size: 14px; /* Adjust font size according to your design */
+  }
+
+  .movie-item img {
+    width: 80px; /* Adjust width according to your design */
+    height: 120px; /* Adjust height according to your design */
+  }
+
+  .details {
+    flex-direction: column; /* Adjust flex-direction according to your design */
+  }
+
+  .theater-info,
+  .show-info {
+    width: 100%; /* Adjust width according to your design */
+  }
+
+  #OrderHome {
+    width: 500px /* Adjust width according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #Ordercontainer {
+    padding: 15px; /* Adjust padding according to your design */
+    width: 1200px;
+  }
+
+  #yourbook {
+    width: 800px; /* Adjust width according to your design */
+
+  
+    
+  }
+
+  #Main {
+    justify-content: space-between; /* Adjust justify-content according to your design */
+  }
+
+  .ticket-container {
+    width: 45%; /* Adjust width according to your design */
+    margin: 10px; /* Adjust margin according to your design */
+  }
+
+  .movie-item h3 {
+    font-size: 16px; /* Adjust font size according to your design */
+  }
+
+  .movie-item img {
+    width: 100px; /* Adjust width according to your design */
+    height: 150px; /* Adjust height according to your design */
+  }
+
+  #OrderHome {
+     
+    width: 700px;
+
+    margin-top: 250px;
+  }
+
+
+  #Main{
+
+     width: 700px;
+
+     margin-left: 350px;
+     
+     margin-top: 50px;
+  }
+
+}
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+/* ///////////////////////////////Description.js */
+
+
+
+.DescriptionMain{
+
+  background-color: black;
+  
+  height: 1100px;
+
+ 
+  
+}
+
+
+#HeaderPart{
+
+border: 1px solid gold;
+
+
+height: 80px;
+
+background-color: gold;
+
+display: flex;
+
+justify-content: center;
+
+justify-content: space-around;
+
+text-decoration: none;
+
+
+
+}
+
+
+.DESC2ndmain{
+
+
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+
+
+}
+
+.descriptionbox{
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  
+}
+
+
+
+#castdetails{
+
+ display: flex;
+}
+
+#imageandtext{
+
+ display: flex;
+}
+
+#imagedesc{
+
+ margin-top: 50px;
+ border-radius: 5%;
+ height: 500px;
+ width : 350px;
+ margin-left: 50px;
+}
+
+#textInfo{
+
+  margin-top: 150px;
+
+  margin-left: 120px;
+
+  color: gold;
+}
+
+#plot{
+
+ display: flex;
+}
+
+#plotpara{
+
+  padding-top: 5px;
+ 
+  
+}
+
+#trailer{
+
+  margin-top: -50px;
+
+  margin-left: 180px;
+
+ 
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .DescriptionMain {
+    height: auto; /* Adjust height as needed */
+  
+  }
+  #imagedesc {
+    width: 600px; /* Adjust width as needed */
+    margin-left: 90px;
+  }
+  #textInfo {
+    margin-top: 600px; /* Adjust margin as needed */
+    margin-left: -320px;
+  }
+
+  #movieandcensor{
+
+     font-size: 15px;
+  }
+
+
+  #trailer {
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-left: 0;
+  }
+
+#videoset{
+
+    width: 500px;
+
+    height: 300px;
+}
+
+
+
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+
+
+  .descriptionbox {
+ 
+    align-items: center; /* Adjust align-items according to your design */
+ 
+  }
+
+  #imagedesc {
+    width: 300px; /* Adjust width according to your design */
+    height: 400px;
+    margin-top: 20px; /* Adjust margin-top according to your design */
+    margin-left: 30px; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+  #textInfo {
+    margin-top: 70px; /* Adjust margin-top according to your design */
+    margin-left: 70px; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+     /* Adjust text-align according to your design */
+
+  }
+
+#plotpara{
+
+    font-size: 15px;
+}
+
+#casth4{
+
+   font-size: 15px;
+   padding-top: 4px;
+}
+
+
+
+
+  #trailer {
+    margin-top: 80px; /* Adjust margin-top according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+
+
+ 
+
+
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+/* 
+.seat{
+
+   font-size: 30px;
+   padding-right: 20px;
+   padding-left: 10px;
+}
+
+
+.Seatcontainer{
+
+
+  display: flex;
+
+  margin-left: 270px;
+
+  margin-top: -150px;
+
+
+}
+.seatNO{
+
+   padding-right: 57px;  
+  
+     
+}
+
+#seatno{
+
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+#Seat{
+
+   padding-right: 20px;
+} */
+
+
+
+
+/* 
+.Icon{
+
+  color: black;
+  font-size: 30px;
+} */
+
+/* .babu{
+
+  display: inline;
+  padding-right: 20px;
+  margin-top: 200px;
+} */
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+/* //////////////////Footer.js */
+
+
+.footercontainer{
+
+  border: 1px solid gold;
+  
+  height: 100px;
+  margin-top: 240px;
+  background-color: gold;
+  
+  display: flex;
+
+  justify-content: space-around;
+  
+  
+}
+
+#logos{
+
+  font-size: 50px;
+
+  padding-left: 30px;
+
+  color : white;
+
+  padding-top: -30px;
+ 
+}
+
+
+#followdata{
+
+
+   display: flex;
+
+   flex-direction: column;
+
+   align-items: center;
+
+   margin-left: 900px;
+
+}
+
+#sidebyside{
+
+  display: flex;
+
+  
+}
+
+
+
+
+#aboutandcontact{
+
+   margin-left: 200px;
+   margin-top: 30px;
+}
+
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .footercontainer {
+    height: auto; /* Adjust height according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+
+  }
+
+  #followdata {
+    flex-direction: column; /* Adjust flex-direction according to your design */
+    align-items: center; /* Adjust align-items according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+  #aboutandcontact {
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+    text-align: center; /* Adjust text-align according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .footercontainer {
+    height: auto; /* Adjust height according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+
+   
+   
+  }
+
+  #followdata {
+    
+    flex-direction: column; /* Adjust flex-direction according to your design */
+    align-items: center; /* Adjust align-items according to your design */
+    justify-content: center; /* Adjust justify-content according to your design */
+    margin-left: auto; /* Adjust margin-left according to your design */
+    margin-right: auto; /* Adjust margin-right according to your design */
+  }
+
+  #aboutandcontact {
+    margin-left: 0; /* Adjust margin-left according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+    text-align: left; /* Adjust text-align according to your design */
+  }
+
+  #logos{
+
+     margin-top: -20px;
+  }
+
+  
+}
+
+
+/* ///////////////////// */
+
+
+
+
+
+
+
+
+
+/* Contact Page Styles */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  margin-top: 70px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-success {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  color: #155724;
+}
+
+.contact-error {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  color: #721c24;
+}
+
+
+
+.ContatctMAIN{
+
+  border: 1px solid gold;
+
+  background-color: gold;
+
+  
+
+  height: 60px ;
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    max-width: 100%; /* Adjust max-width according to your design */
+    margin-top: 20px; /* Adjust margin-top according to your design */
+  }
+
+  .contact-container h2 {
+    font-size: 24px; /* Adjust font-size according to your design */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Adjust width according to your design */
+  }
+
+  .contact-success,
+  .contact-error {
+    margin-top: 10px; /* Adjust margin-top according to your design */
+  }
+
+  .ContatctMAIN {
+    height: auto; /* Adjust height according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .contact-container {
+    max-width: 80%; /* Adjust max-width according to your design */
+  }
+
+  .contact-container h2 {
+    font-size: 28px; /* Adjust font-size according to your design */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Adjust width according to your design */
+  }
+}
+
+
+
+
+/* ////////////////////////////// */
+
+
+/* About Us Page Styles */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+.about-header {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  margin-bottom: 10px;
+}
+
+.listitems{
+
+    display: block;
+}
+
+.AboutMain{
+
+  background-color: wheat;
+
+  height: 800px;
+
+  
+}
+
+#abouthome{
+
+  
+  margin-top: 20px;
+
+  width: 760px;
+
+  
+}
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .about-container {
+    max-width: 100%; /* Adjust max-width according to your design */
+  }
+
+  .about-header {
+    font-size: 24px; /* Adjust font-size according to your design */
+    margin-bottom: 10px; /* Adjust margin-bottom according to your design */
+  }
+
+  .about-content {
+    padding: 10px; /* Adjust padding according to your design */
+  }
+
+  .about-content p {
+    font-size: 16px; /* Adjust font-size according to your design */
+  }
+
+  .AboutMain {
+    height: auto; /* Adjust height according to your design */
+  }
+
+  #abouthome {
+    width: 100%; /* Adjust width according to your design */
+    margin-top: 10px; /* Adjust margin-top according to your design */
+  }
+}
+
+/* For Tablet Devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .about-container {
+    max-width: 80%; /* Adjust max-width according to your design */
+  }
+
+  .about-header {
+    font-size: 28px; /* Adjust font-size according to your design */
+    margin-bottom: 15px; /* Adjust margin-bottom according to your design */
+  }
+
+  .about-content {
+    padding: 15px; /* Adjust padding according to your design */
+  }
+
+  .about-content p {
+    font-size: 18px; /* Adjust font-size according to your design */
+  }
+
+  #abouthome {
+    width: 80%; /* Adjust width according to your design */
+    margin-top: 15px; /* Adjust margin-top according to your design */
+  }
+}
+
+
+#linkhover:hover {
+   
+
+  border: 1px solid black;
+  
+  background-color: black;
+ 
+  border-radius: 60px;
+ 
+  padding: 10px;
+ 
+
+
+ }
